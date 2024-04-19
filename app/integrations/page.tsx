@@ -10,7 +10,7 @@ export default function Page() {
       <MainSection />
       <div className="flex flex-col gap-8 justify-center px-4 lg:px-12 py-8 lg:max-w-screen-xl m-auto">
         <p className="text-md text-gray-300 font-bold">Notifications</p>
-        <div className="flex gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           <CardIntegrations />
           <CardIntegrations />
           <CardIntegrations />
@@ -18,7 +18,7 @@ export default function Page() {
       </div>
       <div className="flex flex-col gap-8 justify-center px-4 lg:px-12 py-8 lg:max-w-screen-xl m-auto">
         <p className="text-md text-gray-300 font-bold">SOO/ALMs</p>
-        <div className="flex flex-wrap gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           <CardIntegrations />
           <CardIntegrations />
           <CardIntegrations />

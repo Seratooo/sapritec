@@ -54,9 +54,9 @@ export default function Footer() {
                 name=""
                 id=""
                 placeholder="Input your email"
-                className="text-md px-4 py-2 w-44 md:w-auto"
+                className="text-sm px-4 py-2 w-44 md:w-auto"
               />
-              <button className="bg-teal-600 px-4 py-2 text-md">
+              <button className="bg-teal-600 px-4 py-2 text-sm">
                 Subscribe
               </button>
             </div>
@@ -68,13 +68,13 @@ export default function Footer() {
           name=""
           id=""
           defaultValue="pt"
-          className="bg-black border-[1px] border-gray-400 p-2 rounded-md text-gray-400"
+          className="bg-black border-[1px] border-gray-400 p-2 rounded-md text-gray-400 text-sm"
         >
           <option value="en">English</option>
           <option value="pt">Portuguese</option>
         </select>
-        <p className="text-center">
-          © 2022 Brand, Inc. • Privacy • Terms • Sitemap
+        <p className="text-center text-sm">
+          ©2024 SAPRITEC • Privacy • Terms • Sitemap
         </p>
         <div className="flex gap-1">
           <Facebook />

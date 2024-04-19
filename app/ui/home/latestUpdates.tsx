@@ -4,7 +4,7 @@ export default function LatestUpdates() {
   return (
     <div className="px-4 py-8 flex flex-col items-center justify-center space-y-4">
       <h3 className="text-4xl font-bold">Latest updates</h3>
-      <p className="text-gray-100 w-[39rem] text-center">
+      <p className="text-gray-100 md:w-[39rem] text-center">
         Do consectetur proident proident id eiusmod deserunt consequat pariatur
         ad ex velit do Lorem reprehenderit.
       </p>

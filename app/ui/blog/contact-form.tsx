@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ContactForm() {
   return (
-    <div className="flex gap-20 px-4 py-16 items-center justify-center">
+    <div className="flex flex-col md:flex-row gap-20 px-4 py-16 items-center justify-center">
       <div className="flex flex-col gap-4">
         <h3 className="text-4xl font-bold">Need support?</h3>
         <p className="text-xs text-gray-400">
@@ -13,11 +13,12 @@ export default function ContactForm() {
           width={450}
           height={660}
           alt="Contact form"
+          className="hidden md:block"
         />
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 w-full md:w-auto">
         <div className="flex gap-4">
-          <label htmlFor="" className="flex flex-col text-sm">
+          <label htmlFor="" className="flex flex-col text-sm w-[48%]">
             First Name
             <input
               type="text"
@@ -27,7 +28,7 @@ export default function ContactForm() {
               className="text-sm text-gray-400 p-3 rounded-md border bg-black border-gray-600"
             />
           </label>
-          <label htmlFor="" className="flex flex-col text-sm">
+          <label htmlFor="" className="flex flex-col text-sm w-[48%]">
             Last Name
             <input
               type="text"

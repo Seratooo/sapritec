@@ -7,7 +7,7 @@ export default function MainSection() {
         About
         <span className="text-teal-400"> SAPRITEC</span>
       </h1>
-      <p className="text-sm text-gray-400 w-[30rem] text-center">
+      <p className="text-sm text-gray-400 md:w-[30rem] text-center">
         Occaecat est ipsum reprehenderit reprehenderit veniam anim laborum est
         esse duis occaecat reprehenderit pariatur.
       </p>

@@ -7,9 +7,9 @@ export default function ProductSupport() {
       <input
         type="text"
         placeholder="Search what you need"
-        className="text-md p-4 bg-gray-800 rounded-md w-[40rem]"
+        className="text-md p-4 bg-gray-800 rounded-md w-full md:w-[40rem]"
       />
-      <div className="flex gap-4">
+      <div className="flex flex-wrap justify-center gap-4">
         <div className="bg-gray-800 flex flex-col items-center justify-center py-8 px-4 gap-4">
           <div className="p-4 rounded-full bg-teal-600">
             <MessageSquareText className="text-white" />

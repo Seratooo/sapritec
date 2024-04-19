@@ -3,14 +3,15 @@ import Image from "next/image";
 
 export default function Testimonios() {
   return (
-    <div className="flex gap-24 items-center justify-center px-4 py-16">
+    <div className="flex gap-4 md:gap-24 items-center justify-center px-4 py-16">
       <Image
         src={`/assets/home/testimonios/Image 6.png`}
         width={280}
         height={320}
         alt="testimonios"
+        className="rounded-full md:rounded-md w-32 md:w-auto"
       />
-      <div className="w-[40rem] space-y-8">
+      <div className="md:w-[40rem] space-y-8">
         <span className="flex gap-1">
           <Star />
           <Star />
