@@ -4,7 +4,7 @@ import Logo from "./logo";
 export default function Footer() {
   return (
     <footer className="">
-      <div className="flex px-4 md:px-24 items-start gap-48 border-t-[1px] border-gray-800 mt-24 pt-20">
+      <div className="flex px-4 md:px-24 items-start gap-48 border-t-[1px] border-gray-900 mt-24 pt-20">
         <div className="hidden md:block">
           <Logo />
         </div>
