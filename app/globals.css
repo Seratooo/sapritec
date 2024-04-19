@@ -7,10 +7,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-img {
-  margin: 0 !important;
+body {
+  background-color: rgb(var(--foreground-rgb));
+  color: rgb(var(--background-end-rgb));
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -33,4 +34,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+*/
+img {
+  margin: 0 !important;
 }
