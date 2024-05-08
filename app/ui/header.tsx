@@ -10,7 +10,7 @@ export default function HeaderMenu() {
         <div className="flex gap-8 items-center">
           <NavLinks />
           <div className="flex gap-4 text-sm">
-            <button className="bg-blue-600 py-2 px-3 rounded-md">
+            <button className="bg-sky-600 py-2 px-3 rounded-md">
               Saiba mais
             </button>
           </div>
