@@ -11,27 +11,18 @@ export default function NavLinks() {
   ];
   return (
     <nav>
-      <ul className="flex gap-4 items-center text-sm">
-        <Link href="features" className="text-gray-400 hover:text-gray-100">
-          Features
+      <ul className="flex gap-8 items-center text-sm">
+        <Link href="/home" className="text-gray-400 hover:text-gray-100">
+          Início
         </Link>
-        <Link href="pricingplans" className="text-gray-400 hover:text-gray-100">
-          Pricing
+        <Link href="/services" className="text-gray-400 hover:text-gray-100">
+          Serviços
         </Link>
         <Link href="aboutus" className="text-gray-400 hover:text-gray-100">
-          About us
+          Sobre nós
         </Link>
-        <Link href="" className="text-gray-400 hover:text-gray-100">
-          Contact
-        </Link>
-        <Link href="blog" className="text-gray-400 hover:text-gray-100">
-          Blog
-        </Link>
-        <Link href="support" className="text-gray-400 hover:text-gray-100">
-          Support
-        </Link>
-        <Link href="integrations" className="text-gray-400 hover:text-gray-100">
-          Integration
+        <Link href="/contactus" className="text-gray-400 hover:text-gray-100">
+          Contacte-nos
         </Link>
       </ul>
     </nav>
@@ -50,44 +41,17 @@ export function NavLinksMobile() {
   return (
     <nav>
       <ul className="flex flex-col mt-12 gap-8 items-center text-sm">
-        <Link
-          href="features"
-          className="text-gray-400 text-3xl hover:text-gray-100"
-        >
-          Features
+        <Link href="/home" className="text-gray-400 hover:text-gray-100">
+          Início
         </Link>
-        <Link
-          href="pricingplans"
-          className="text-gray-400 text-3xl hover:text-gray-100"
-        >
-          Pricing
+        <Link href="/services" className="text-gray-400 hover:text-gray-100">
+          Serviços
         </Link>
-        <Link
-          href="aboutus"
-          className="text-gray-400 text-3xl hover:text-gray-100"
-        >
-          About us
+        <Link href="aboutus" className="text-gray-400 hover:text-gray-100">
+          Sobre nós
         </Link>
-        <Link href="" className="text-gray-400 text-3xl hover:text-gray-100">
-          Contact
-        </Link>
-        <Link
-          href="blog"
-          className="text-gray-400 text-3xl hover:text-gray-100"
-        >
-          Blog
-        </Link>
-        <Link
-          href="support"
-          className="text-gray-400 text-3xl hover:text-gray-100"
-        >
-          Support
-        </Link>
-        <Link
-          href="integrations"
-          className="text-gray-400 text-3xl hover:text-gray-100"
-        >
-          Integration
+        <Link href="/contactus" className="text-gray-400 hover:text-gray-100">
+          Contacte-nos
         </Link>
       </ul>
     </nav>

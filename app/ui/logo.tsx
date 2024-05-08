@@ -6,10 +6,10 @@ export default function Logo() {
     <Link href="/">
       <Image
         alt="logo-sapritec"
-        src="/assets/logo.png"
-        className="select-none w-20 h-auto"
-        width={130}
-        height={46}
+        src="/assets/logo-sapritec.png"
+        className="select-none w-32 h-auto"
+        width={192}
+        height={62}
       ></Image>
     </Link>
   );
