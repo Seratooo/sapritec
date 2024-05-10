@@ -6,9 +6,9 @@ export default function ContactForm() {
       className="flex flex-col md:flex-row gap-20 px-4 py-16 items-center justify-center h-screen my-44"
       id="contactus"
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-1">
         <h3 className="text-4xl font-bold">Precisa de ajuda?</h3>
-        <p className="text-xs text-gray-400">
+        <p className="text-md 2xl:text-lg text-gray-400">
           Entre em contato conosco e tire as suas dúvidas!
         </p>
         <Image
@@ -19,12 +19,13 @@ export default function ContactForm() {
           className="hidden md:block"
         />
       </div>
-      <div className="flex flex-col gap-8 w-full md:w-auto">
+      <form className="flex flex-col gap-8 w-full md:w-auto">
         <div className="flex gap-4">
           <label htmlFor="" className="flex flex-col text-sm w-[48%]">
-            First Name
+            Primeiro nome
             <input
               type="text"
+              required
               name=""
               id=""
               placeholder="Name"
@@ -32,9 +33,10 @@ export default function ContactForm() {
             />
           </label>
           <label htmlFor="" className="flex flex-col text-sm w-[48%]">
-            Last Name
+            Último nome
             <input
               type="text"
+              required
               name=""
               id=""
               placeholder="Name"
@@ -47,6 +49,7 @@ export default function ContactForm() {
             Email
             <input
               type="email"
+              required
               name=""
               id=""
               placeholder="Email"
@@ -56,7 +59,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="" className="flex flex-col text-sm">
-            Comapny Name
+            Nome da empresa
             <input
               type="text"
               name=""
@@ -68,33 +71,42 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="" className="flex flex-col text-sm">
-            Company size
+            Nº de colaboradores
             <select
               name=""
               id=""
               className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
             >
-              <option value="">xx</option>
+              <option value="">5-10</option>
+              <option value="">10-20</option>
+              <option value="">20-40</option>
+              <option value="">+40</option>
             </select>
           </label>
         </div>
         <div>
           <label htmlFor="" className="flex flex-col text-sm">
-            Which topic best fit your needs?
+            Qual tópico melhor atende às suas necessidades?
             <select
               name=""
               id=""
+              required
               className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
             >
-              <option value="">xx</option>
+              <option value="">Consultoria</option>
+              <option value="">Desenvolvimento de software</option>
+              <option value="">Treinamento</option>
+              <option value="">Prestação de serviço</option>
+              <option value="">Diversos</option>
             </select>
           </label>
         </div>
         <div>
           <label htmlFor="" className="flex flex-col text-sm">
-            How can we help?
+            Como podemos ajudar?
             <textarea
               name=""
+              required
               id=""
               cols={30}
               rows={5}
@@ -102,8 +114,10 @@ export default function ContactForm() {
             ></textarea>
           </label>
         </div>
-        <button className="bg-sky-600 p-3 ">Submit</button>
-      </div>
+        <button className="bg-sky-600 p-3 text-md xl:text-xl" type="submit">
+          Contactar
+        </button>
+      </form>
     </div>
   );
 }

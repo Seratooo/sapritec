@@ -72,7 +72,7 @@ export default function Home() {
             </p>
             <Target className="size-16 2xl:size-24" />
           </div>
-          <div className="bg-sky-900 md:h-[80vh] flex flex-col gap-8 px-4 sm:px-20 justify-center items-center w-full md:w-[35%] pb-4 py-4 my-4 md:my-0 md:py-4">
+          <div className="bg-sky-900 md:bg-black md:h-[80vh] flex flex-col gap-8 px-4 sm:px-20 justify-center items-center w-full md:w-[35%] pb-4 py-4 my-4 md:my-0 md:py-4">
             <p className="text-4xl 2xl:text-7xl font-bold text-white">Visão</p>
 
             <p className="md:pl-12 text-white text-md md:text-xs 2xl:text-2xl text-center 2xl:leading-10">
@@ -121,7 +121,7 @@ export default function Home() {
             {services.map((service, index) => (
               <CarouselItem
                 key={index}
-                className="margin-0 p-0 z-0 bg-slate-400"
+                className="margin-0 p-0 z-0 bg-slate-400 md:bg-transparent"
               >
                 <div className="flex flex-col gap-4 bg-slate-400 px-10 py-12 md:border z-0">
                   <h3 className="font-bold text-4xl 2xl:text-7xl text-black">
