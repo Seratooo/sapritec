@@ -7,7 +7,7 @@ export default function Logo() {
       <Image
         alt="logo-sapritec"
         src="/assets/logo-sapritec.png"
-        className="select-none w-32 h-auto"
+        className="select-none w-32 xl:w-48 h-auto"
         width={192}
         height={62}
       ></Image>

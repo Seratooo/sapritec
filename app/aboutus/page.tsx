@@ -11,7 +11,6 @@ export default function Page() {
       <HeaderMenu />
       <MainSection />
       <Identity />
-      <OurTeam />
       <JoinOurTeam />
       <Footer />
     </>
