@@ -1,4 +1,5 @@
 "use client";
+import { ChevronsDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function MainSection() {
@@ -34,6 +35,7 @@ export default function MainSection() {
             expertise incomparáveis. Nossa missão é clara: impulsionar o
             progresso através da excelência, da integridade e da colaboração.
           </p>
+          <ChevronsDown className="size-20 md:size-32" />
         </div>
       </div>
       <div className="-mt-[90vh] bg-[url('/assets/home/teclado.jpg')] bg-cover h-screen w-full hue-rotate-30 top-7 brightness-[.1] blur-sm"></div>
