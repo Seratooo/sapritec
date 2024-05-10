@@ -12,7 +12,7 @@ export default function HeaderMenuMobile() {
     setStatusMenu(!statusMenu);
   }
   return (
-    <div className="p-4 md:hidden fixed w-full bg-black -top-1 border-b border-gray-900">
+    <div className="p-4 md:hidden fixed w-full bg-black -top-1 border-b border-gray-900 z-50">
       <div className="flex justify-between items-center">
         <Logo />
         <div onClick={handleToggleMobileMenu}>
