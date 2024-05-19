@@ -11,7 +11,7 @@ export default function NavLinks() {
   ];
   return (
     <nav>
-      <ul className="flex gap-8 lg:gap-20 items-center text-md xl:text-xl">
+      <ul className="flex gap-8 lg:gap-20 items-center text-md 2xl:text-xl">
         <Link
           href="/"
           className="text-white hover:text-sky-200 transition-all duration-300"
@@ -19,20 +19,20 @@ export default function NavLinks() {
           Início
         </Link>
         <Link
-          href="#aboutus"
+          href="/aboutus"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Sobre nós
         </Link>
         <Link
-          href="#services"
+          href="/services"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Serviços
         </Link>
 
         <Link
-          href="#contactus"
+          href="/kwonmore#contactus"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Contacte-nos
@@ -61,20 +61,26 @@ export function NavLinksMobile() {
           Início
         </Link>
         <Link
-          href="#aboutus"
+          href="/aboutus"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Sobre nós
         </Link>
         <Link
-          href="#services"
+          href="/services"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Serviços
         </Link>
+        <Link
+          href="/kwonmore"
+          className="text-white hover:text-sky-200 transition-all duration-300"
+        >
+          Saiba mais
+        </Link>
 
         <Link
-          href="#contactus"
+          href="/kwonmore#contactus"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Contacte-nos

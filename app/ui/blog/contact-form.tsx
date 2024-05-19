@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ContactForm() {
   return (
     <div
-      className="flex flex-col md:flex-row gap-20 px-4 py-16 items-center justify-center h-screen my-44"
+      className="flex flex-col md:flex-row gap-20 p-4 items-center justify-center h-screen mt-16 md:mt-0"
       id="contactus"
     >
       <div className="flex flex-col gap-1">
@@ -16,7 +16,7 @@ export default function ContactForm() {
           width={450}
           height={660}
           alt="Contact form"
-          className="hidden md:block"
+          className="hidden md:block rounded-md"
         />
       </div>
       <form className="flex flex-col gap-8 w-full md:w-auto">
@@ -29,7 +29,7 @@ export default function ContactForm() {
               name=""
               id=""
               placeholder="Name"
-              className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
+              className="text-sm text-gray-400 p-3  border bg-black border-gray-600 rounded-md"
             />
           </label>
           <label htmlFor="" className="flex flex-col text-sm w-[48%]">
@@ -40,7 +40,7 @@ export default function ContactForm() {
               name=""
               id=""
               placeholder="Name"
-              className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
+              className="text-sm text-gray-400 p-3  border bg-black border-gray-600 rounded-md"
             />
           </label>
         </div>
@@ -53,7 +53,7 @@ export default function ContactForm() {
               name=""
               id=""
               placeholder="Email"
-              className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
+              className="text-sm text-gray-400 p-3  border bg-black border-gray-600 rounded-md"
             />
           </label>
         </div>
@@ -65,7 +65,7 @@ export default function ContactForm() {
               name=""
               id=""
               placeholder="Name"
-              className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
+              className="text-sm text-gray-400 p-3  border bg-black border-gray-600 rounded-md"
             />
           </label>
         </div>
@@ -75,7 +75,7 @@ export default function ContactForm() {
             <select
               name=""
               id=""
-              className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
+              className="text-sm text-gray-400 p-3  border bg-black border-gray-600 rounded-md"
             >
               <option value="">5-10</option>
               <option value="">10-20</option>
@@ -91,7 +91,7 @@ export default function ContactForm() {
               name=""
               id=""
               required
-              className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
+              className="text-sm text-gray-400 p-3  border bg-black border-gray-600 rounded-md"
             >
               <option value="">Consultoria</option>
               <option value="">Desenvolvimento de software</option>
@@ -110,11 +110,14 @@ export default function ContactForm() {
               id=""
               cols={30}
               rows={5}
-              className="text-sm text-gray-400 p-3  border bg-black border-gray-600"
+              className="text-sm text-gray-400 p-3  border bg-black border-gray-600 rounded-md"
             ></textarea>
           </label>
         </div>
-        <button className="bg-sky-600 p-3 text-md xl:text-xl" type="submit">
+        <button
+          className="bg-sky-600 p-3 text-md xl:text-xl rounded-md"
+          type="submit"
+        >
           Contactar
         </button>
       </form>
