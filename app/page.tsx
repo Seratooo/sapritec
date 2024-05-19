@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <HeaderMenu />
-      <main className="flex items-center justify-center h-[calc(100vh)] p-4">
+      <main className="flex items-center justify-center min-h-[calc(100vh)] p-4 mt-8">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl md:text-5xl 2xl:text-7xl font-bold text-center md:text-right">
             Seja bem vindo a<span className="text-sky-600"> SAPRITEC </span>
