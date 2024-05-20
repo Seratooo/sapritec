@@ -24,7 +24,8 @@ export default function Home() {
   return (
     <>
       <HeaderMenu />
-      <main className="flex items-center justify-center min-h-[calc(100vh)] p-4 mt-8">
+
+      <main className="flex items-center justify-center min-h-[calc(100vh)] p-4 mt-8 snap-always snap-start">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl md:text-5xl 2xl:text-7xl font-bold text-center md:text-right">
             Seja bem vindo a<span className="text-sky-600"> SAPRITEC </span>
@@ -37,13 +38,13 @@ export default function Home() {
               <h3 className="font-bold text-sky-600 text-2xl md:text-3xl 2xl:text-5xl max-w-[30rem] leading-[1.1] 2xl:leading-[1.2]">
                 SAPRITEC, a melhor solução tecnológica para a sua empresa
               </h3>
-              <p className="text-md 2xl:text-xl max-w-[32rem] leading-[1.5] 2xl:leading-[1.5] text-gray-300">
+              <p className="text-md 2xl:text-xl md:max-w-[32rem] leading-[1.5] 2xl:leading-[1.5]">
                 Na Sapritec, estamos moldando o futuro digital com inovação e
                 expertise incomparáveis. <br /> Nossa missão é clara:
                 impulsionar o progresso através da excelência, da integridade e
                 da colaboração.
               </p>
-              <p className="text-md 2xl:text-xl max-w-[32rem] leading-[1.5] 2xl:leading-[1.5] text-gray-300">
+              <p className="text-md 2xl:text-xl md:max-w-[32rem] leading-[1.5] 2xl:leading-[1.5]">
                 Junte-se a nós na jornada rumo à excelência tecnológica e ao
                 sucesso empresarial duradouro.
               </p>
@@ -53,14 +54,14 @@ export default function Home() {
                 src={"/assets/home/sapritec-home.png"}
                 width={727}
                 height={633}
-                className="2xl:max-w-[727px]"
+                className="2xl:max-w-[727px] transition-all duration-700"
                 alt="home iamge"
               ></Image>
             </div>
           </div>
         </div>
       </main>
-      <div className="mt-8 py-8 md:0 flex flex-col items-center space-y-4 justify-center bg-[#171A1F] ">
+      <div className="mt-8 py-8 md:0 flex flex-col items-center space-y-4 justify-center bg-[#171A1F] snap-always snap-start">
         <h3 className="text-md 2xl:text-xl font-bold text-center uppercase">
           Oferecemos o diferencial nos nossos produtos!
         </h3>
@@ -103,7 +104,7 @@ export default function Home() {
           ></Image>
         </div>
       </div>
-      <div className="mt-16 md:mt-32 p-4 flex flex-col items-center gap-16">
+      <div className="mt-16 md:mt-32 p-4 flex flex-col items-center gap-16 snap-always snap-start">
         <div className="flex gap-8 flex-col md:flex-row">
           <div className="space-y-4">
             <h3 className="text-3xl font-bold">SAP ERP</h3>
@@ -129,13 +130,13 @@ export default function Home() {
         </div>
         <div className="flex gap-8 flex-col md:flex-row-reverse">
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold">SAP ERP</h3>
+            <h3 className="text-3xl font-bold">SAP S/4HANA</h3>
             <p className="text-gray-300 max-w-[21rem]">
-              Com uma arquitetura altamente modular e flexível, o SAP ERP pode
-              ser adaptado às necessidades específicas de qualquer organização.
-              Sua capacidade de integração total permite uma comunicação
-              contínua entre os diferentes departamentos, eliminando silos de
-              informação e promovendo a colaboração eficaz.
+              Apresentamos o SAP S/4HANA, a próxima geração em gestão
+              empresarial construída na poderosa plataforma SAP HANA. Esta
+              solução revolucionária oferece processamento em tempo real e
+              análises avançadas, capacitando as empresas a alcançar novos
+              patamares de desempenho e eficácia operacional.
             </p>
             <button className="bg-[#EB8E23] text-black px-4 py-2 rounded-md text-sm 2xl:text-md">
               Saiba mais
@@ -152,13 +153,13 @@ export default function Home() {
         </div>
         <div className="flex gap-8 flex-col md:flex-row">
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold">SAP ERP</h3>
+            <h3 className="text-3xl font-bold">PRIMAVERA ERP</h3>
             <p className="text-gray-300 max-w-[21rem]">
-              Com uma arquitetura altamente modular e flexível, o SAP ERP pode
-              ser adaptado às necessidades específicas de qualquer organização.
-              Sua capacidade de integração total permite uma comunicação
-              contínua entre os diferentes departamentos, eliminando silos de
-              informação e promovendo a colaboração eficaz.
+              Esta plataforma permite uma visão holística das operações
+              empresariais, capacitando as equipes a tomar decisões informadas e
+              estratégicas. Com recursos avançados de relatórios e análises, o
+              PRIMAVERA ERP permite uma compreensão profunda do desempenho
+              organizacional.
             </p>
             <button className="bg-[#356FC1] text-black px-4 py-2 rounded-md text-sm 2xl:text-md">
               Saiba mais
@@ -175,7 +176,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-16 p-4 flex flex-col items-center justify-center gap-8">
+      <div className="mt-16 p-4 flex flex-col items-center justify-center gap-8 snap-always snap-start">
         <h3 className="text-3xl font-bold">Benefícios</h3>
         <div className="flex flex-col md:flex-row gap-4">
           <div className="bg-[#171A1F] p-4 rounded-md flex flex-col items-center justify-center">
@@ -217,7 +218,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-16 p-4 flex items-center justify-center">
+      <div className="mt-16 p-4 flex items-center justify-center snap-always snap-start">
         <div className="bg-sky-600 flex flex-col md:flex-row rounded-lg overflow-hidden">
           <div className="flex flex-col justify-center items-start p-8 md:p-16 gap-4">
             <h3 className="text-3xl font-bold">Fale Connosco!</h3>
@@ -240,7 +241,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-16 p-4 flex items-center justify-center">
+      <div className="mt-16 p-4 flex items-center justify-center snap-always snap-start">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-20">
           <div>
             <Image
@@ -272,7 +273,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-16 p-4 flex items-center justify-center">
+      <div className="mt-16 p-4 flex items-center justify-center snap-always snap-start">
         <div className="flex flex-col items-center">
           <h3 className="text-3xl font-bold">Nossos treinamentos</h3>
           <p className="text-md text-gray-300 mt-2 max-w-[35rem] text-center">

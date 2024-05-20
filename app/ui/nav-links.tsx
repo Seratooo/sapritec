@@ -53,10 +53,10 @@ export function NavLinksMobile() {
   ];
   return (
     <nav className="h-full">
-      <ul className="flex flex-col justify-evenly items-center text-2xl h-full">
+      <ul className="flex flex-col gap-16 items-center text-2xl h-full">
         <Link
           href="/"
-          className="text-white hover:text-sky-200 transition-all duration-300"
+          className="text-white hover:text-sky-200 transition-all duration-300 mt-16"
         >
           Início
         </Link>

@@ -15,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+    <html lang="pt" className="scroll-smooth">
+      <body
+        className={`${inter.className} antialiased scroll-smooth transition-all duration-300 snap-y snap-mandatory`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
