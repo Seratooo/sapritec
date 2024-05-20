@@ -21,8 +21,8 @@ export default function HeaderMenuMobile() {
       </div>
       <div
         className={`${
-          statusMenu ? "w-full block" : "h-0"
-        } bg-black w-full h-screen transition-all duration-700 overflow-hidden`}
+          statusMenu ? "h-screen" : "h-0"
+        } bg-black w-full transition-all duration-700 overflow-hidden`}
       >
         <NavLinksMobile />
       </div>
