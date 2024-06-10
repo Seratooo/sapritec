@@ -22,7 +22,7 @@ export default function NavLinks() {
           href="/aboutus"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
-          Sobre nós
+          Sobre-nós
         </Link>
         <Link
           href="/services"
@@ -35,7 +35,7 @@ export default function NavLinks() {
           href="/kwonmore#contactus"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
-          Contacte-nos
+          Treinamentos
         </Link>
       </ul>
     </nav>
@@ -64,7 +64,7 @@ export function NavLinksMobile() {
           href="/aboutus"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
-          Sobre nós
+          Sobre-nós
         </Link>
         <Link
           href="/services"
@@ -76,7 +76,7 @@ export function NavLinksMobile() {
           href="/kwonmore"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
-          Saiba mais
+          Treinamentos
         </Link>
 
         <Link

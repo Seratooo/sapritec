@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Rowdies, Archivo } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+export const rowdies = Rowdies({
+  style: ["normal"],
+  weight: "400",
+  subsets: ["latin"],
+});
+const archivo = Archivo({
+  weight: ["100", "200", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "SAPRITEC",
@@ -17,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="pt" className="scroll-smooth">
       <body
-        className={`${inter.className} antialiased scroll-smooth transition-all duration-300 snap-y snap-mandatory`}
+        className={`${rowdies.className} ${archivo.className} antialiased scroll-smooth transition-all duration-300 snap-y snap-mandatory`}
       >
         {children}
       </body>

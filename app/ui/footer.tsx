@@ -4,7 +4,7 @@ import Logo from "./logo";
 export default function Footer() {
   return (
     <footer className="">
-      <div className="flex px-4 2xl:px-48 items-start border-t-[1px] border-gray-900 mt-24 pt-20">
+      <div className="flex px-4 2xl:px-12 items-start border-t-[1px] border-gray-900 mt-24 pt-20">
         <div className="flex justify-between w-full flex-wrap gap-4">
           <Logo></Logo>
           <div className="space-y-3 w-36">
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex gap-2 justify-center items-center px-4 2xl:px-48 pt-24 pb-4">
-        <p className="text-center text-sm">
+        <p className="text-center text-sm max-w-52 md:max-w-none">
           © Copyright 2024 Sapritec. Todos os direitos Reservados
         </p>
         <div className="flex gap-1">

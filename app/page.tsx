@@ -19,234 +19,202 @@ import ContactForm from "./ui/blog/contact-form";
 import Identity from "./ui/aboutUS/identity";
 import Feactures, { Coaching } from "./ui/services/feature";
 import { Star } from "lucide-react";
+import { rowdies } from "./layout";
 
 export default function Home() {
   return (
     <>
       <HeaderMenu />
 
-      <main className="flex items-center justify-center min-h-[calc(100vh)] p-4 mt-8 snap-always snap-start">
-        <div className="flex flex-col items-center">
-          <h1 className="text-3xl md:text-5xl 2xl:text-7xl font-bold text-center md:text-right">
-            Seja bem vindo a<span className="text-sky-600"> SAPRITEC </span>
+      <main className="flex items-center min-h-[100vh] md:min-h-[110vh] h-screen bg-[url('/assets/home/sapritec-home-mobile.jpg')] md:bg-[url('/assets/home/sapritec-home.png')] bg-center md:bg-top px-4 md:px-12 py-4 bg-cover">
+        <div className="flex flex-col gap-16 items-center md:items-start">
+          <h1
+            className={`text-4xl md:text-5xl 2xl:text-6xl text-center md:text-left md:max-w-[35rem] 2xl:max-w-[38rem] ${rowdies.className}`}
+          >
+            SAPRITEC, a melhor solução tecnológica para sua empresa
           </h1>
-          <p className="text-md 2xl:text-xl hidden md:block">
-            Criando o futuro e realizando sonhos tecnológicos!
-          </p>
-          <div className="flex flex-col-reverse gap-8 md:gap-4 md:flex-row items-center justify-center pt-4">
-            <div className="space-y-4 md:space-y-8">
-              <h3 className="font-bold text-sky-600 text-2xl md:text-3xl 2xl:text-5xl max-w-[30rem] leading-[1.1] 2xl:leading-[1.2]">
-                SAPRITEC, a melhor solução tecnológica para a sua empresa
-              </h3>
-              <p className="text-md 2xl:text-xl md:max-w-[32rem] leading-[1.5] 2xl:leading-[1.5]">
-                Na Sapritec, estamos moldando o futuro digital com inovação e
-                expertise incomparáveis. <br /> Nossa missão é clara:
-                impulsionar o progresso através da excelência, da integridade e
-                da colaboração.
-              </p>
-              <p className="text-md 2xl:text-xl md:max-w-[32rem] leading-[1.5] 2xl:leading-[1.5]">
-                Junte-se a nós na jornada rumo à excelência tecnológica e ao
-                sucesso empresarial duradouro.
-              </p>
-            </div>
-            <div className="flex items-center justify-start rounded-lg overflow-hidden">
-              <Image
-                src={"/assets/home/sapritec-home.png"}
-                width={727}
-                height={633}
-                className="2xl:max-w-[727px] transition-all duration-700"
-                alt="home iamge"
-              ></Image>
-            </div>
+          <div className="flex gap-2 items-center">
+            <p className="text-xl bg-white text-[#00152A] px-4 py-2 font-bold rounded-sm">
+              INOVAÇÃO
+            </p>
+            <p
+              className={`text-4xl py-2 font-bold rounded-sm text-white ${rowdies.className}`}
+            >
+              +
+            </p>
+            <p className="text-xl bg-white text-[#00152A] px-4 py-2 font-bold rounded-sm">
+              FUTURO
+            </p>
           </div>
+          <p className="text-2xl 2xl:text-3xl text-center md:text-left md:max-w-[35rem] 2xl:max-w-[40rem]">
+            Junte-se a nós na jornada rumo à excelência tecnológica e ao sucesso
+            empresarial duradouro
+          </p>
         </div>
       </main>
-      <div className="mt-8 py-8 md:0 flex flex-col items-center space-y-4 justify-center bg-[#171A1F] snap-always snap-start">
-        <h3 className="text-md 2xl:text-xl font-bold text-center uppercase">
-          Oferecemos o diferencial nos nossos produtos!
+      <div className="py-16 md:0 flex flex-col items-center space-y-8 justify-center bg-[#00152A] snap-always snap-start">
+        <h3
+          className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
+        >
+          Nossos produtos
         </h3>
-        <div className="flex gap-1 flex-wrap items-center justify-center">
-          <Image
-            src={"/assets/home/partners/product1.png"}
-            width={164}
-            height={124}
-            alt="product"
-          ></Image>
-          <Image
-            src={"/assets/home/partners/product1.png"}
-            width={164}
-            height={124}
-            alt="product"
-          ></Image>
-          <Image
-            src={"/assets/home/partners/product1.png"}
-            width={164}
-            height={124}
-            alt="product"
-          ></Image>
-          <Image
-            src={"/assets/home/partners/product1.png"}
-            width={164}
-            height={124}
-            alt="product"
-          ></Image>
-          <Image
-            src={"/assets/home/partners/product1.png"}
-            width={164}
-            height={124}
-            alt="product"
-          ></Image>
-          <Image
-            src={"/assets/home/partners/product1.png"}
-            width={164}
-            height={124}
-            alt="product"
-          ></Image>
+        <div className="flex flex-wrap gap-12 items-center justify-center">
+          <div className="flex flex-col items-center gap-3">
+            <Image
+              src={"/assets/home/products/product1.png"}
+              width={239}
+              height={125}
+              alt="product"
+            ></Image>
+            <h3 className="text-sm text-center font-thin">
+              SAP ERP, SAP4/HANA, SAP MM, SAP FI
+            </h3>
+          </div>
+
+          <div className="flex flex-col items-center gap-3">
+            <Image
+              src={"/assets/home/products/product2.png"}
+              width={129}
+              height={125}
+              alt="product"
+            ></Image>
+            <h3 className="text-sm text-center font-thin">
+              INTELIGÊNCIA ARTIFICIAL
+            </h3>
+          </div>
+
+          <div className="flex flex-col items-center gap-3">
+            <Image
+              src={"/assets/home/products/product3.png"}
+              width={125}
+              height={125}
+              alt="product"
+            ></Image>
+            <h3 className="text-sm text-center font-thin">PRIMAVERA ERP</h3>
+          </div>
+
+          <div className="flex flex-col items-center gap-3">
+            <Image
+              src={"/assets/home/products/product4.png"}
+              width={207}
+              height={125}
+              alt="product"
+            ></Image>
+            <h3 className="text-sm text-center font-thin">PLATAFORMA AS400</h3>
+          </div>
+          <div className="flex flex-col items-center gap-3">
+            <Image
+              src={"/assets/home/products/product5.png"}
+              width={139}
+              height={125}
+              alt="product"
+            ></Image>
+            <h3 className="text-sm text-center max-w-48 font-thin">
+              DESENVOLVIMENTO DE SOFTWARE
+            </h3>
+          </div>
         </div>
       </div>
-      <div className="mt-16 md:mt-32 p-4 flex flex-col items-center gap-16 snap-always snap-start">
-        <div className="flex gap-8 flex-col md:flex-row">
+
+      <div className="mt-16 md:mt-32 p-4 flex flex-col items-center gap-16">
+        <div className="flex gap-8 items-center flex-col md:flex-row">
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold">SAP ERP</h3>
-            <p className="text-gray-300 max-w-[21rem]">
+            <h3
+              className={`text-2xl 2xl:text-3xl uppercase ${rowdies.className}`}
+            >
+              SAP ERP
+            </h3>
+            <p className="text-gray-300 max-w-[21rem] text-md font-thin">
               Com uma arquitetura altamente modular e flexível, o SAP ERP pode
               ser adaptado às necessidades específicas de qualquer organização.
               Sua capacidade de integração total permite uma comunicação
               contínua entre os diferentes departamentos, eliminando silos de
               informação e promovendo a colaboração eficaz.
             </p>
-            <button className="bg-[#609FEC] text-black px-4 py-2 rounded-md text-sm 2xl:text-md">
-              Saiba mais
-            </button>
           </div>
-          <div className="rounded-xl overflow-hidden">
+          <div className="">
             <Image
-              src={"/assets/home/feature/sap.png"}
-              width={727}
-              height={400}
+              src={"/assets/home/feature/sap-erp.png"}
+              width={477}
+              height={454}
               alt="service"
             ></Image>
+            <hr className="w-[90%] mt-3 m-auto border-gray-900 block md:hidden" />
           </div>
         </div>
-        <div className="flex gap-8 flex-col md:flex-row-reverse">
+        <div className="flex gap-8 items-center flex-col md:flex-row-reverse">
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold">SAP S/4HANA</h3>
-            <p className="text-gray-300 max-w-[21rem]">
+            <h3
+              className={`text-2xl 2xl:text-3xl uppercase ${rowdies.className}`}
+            >
+              SAP S/4HANA
+            </h3>
+            <p className="text-gray-300 max-w-[21rem] text-md font-thin">
               Apresentamos o SAP S/4HANA, a próxima geração em gestão
               empresarial construída na poderosa plataforma SAP HANA. Esta
               solução revolucionária oferece processamento em tempo real e
               análises avançadas, capacitando as empresas a alcançar novos
               patamares de desempenho e eficácia operacional.
             </p>
-            <button className="bg-[#EB8E23] text-black px-4 py-2 rounded-md text-sm 2xl:text-md">
-              Saiba mais
-            </button>
           </div>
           <div className="rounded-xl overflow-hidden">
             <Image
               src={"/assets/home/feature/sap4hana.png"}
-              width={727}
-              height={400}
+              width={443}
+              height={308}
               alt="service"
             ></Image>
+            <hr className="w-[90%] mt-3 m-auto border-gray-900 block md:hidden" />
           </div>
         </div>
-        <div className="flex gap-8 flex-col md:flex-row">
+        <div className="flex gap-8 items-center flex-col md:flex-row">
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold">PRIMAVERA ERP</h3>
-            <p className="text-gray-300 max-w-[21rem]">
+            <h3
+              className={`text-2xl 2xl:text-3xl uppercase ${rowdies.className}`}
+            >
+              PRIMAVERA ERP
+            </h3>
+            <p className="text-gray-300 max-w-[21rem] text-md font-thin">
               Esta plataforma permite uma visão holística das operações
               empresariais, capacitando as equipes a tomar decisões informadas e
               estratégicas. Com recursos avançados de relatórios e análises, o
               PRIMAVERA ERP permite uma compreensão profunda do desempenho
               organizacional.
             </p>
-            <button className="bg-[#356FC1] text-black px-4 py-2 rounded-md text-sm 2xl:text-md">
-              Saiba mais
-            </button>
           </div>
           <div className="rounded-xl overflow-hidden">
             <Image
               src={"/assets/home/feature/primavera.png"}
-              width={727}
-              height={400}
+              width={498}
+              height={329}
               alt="service"
             ></Image>
+            <hr className="w-[90%] mt-3 m-auto border-gray-900 block md:hidden" />
           </div>
         </div>
       </div>
 
-      <div className="mt-16 p-4 flex flex-col items-center justify-center gap-8 snap-always snap-start">
-        <h3 className="text-3xl font-bold">Benefícios</h3>
-        <div className="flex flex-col md:flex-row gap-4">
-          <div className="bg-[#171A1F] p-4 rounded-md flex flex-col items-center justify-center">
-            <Image
-              src={"/assets/home/integrations/icone1.png"}
-              width={169}
-              height={125}
-              alt="Benefícip"
-            ></Image>
-            <p className="text-gray-300 text-md md:max-w-[18rem]">
-              Invista no crescimento profissional e expanda suas habilidades,
-              alcance novas oportunidades e conquiste o sucesso que você merece.
-            </p>
-          </div>
-          <div className="bg-[#171A1F] p-4 rounded-md flex flex-col items-center justify-center">
-            <Image
-              src={"/assets/home/integrations/icone2.png"}
-              width={140}
-              height={129}
-              alt="Benefícip"
-            ></Image>
-            <p className="text-gray-300 text-md md:max-w-[18rem]">
-              Invista no crescimento profissional e expanda suas habilidades,
-              alcance novas oportunidades e conquiste o sucesso que você merece.
-            </p>
-          </div>
-          <div className="bg-[#171A1F] p-4 rounded-md flex flex-col items-center justify-center">
-            <Image
-              src={"/assets/home/integrations/icone3.png"}
-              width={107}
-              height={127}
-              alt="Benefícip"
-            ></Image>
-            <p className="text-gray-300 text-md md:max-w-[18rem]">
-              Invista no crescimento profissional e expanda suas habilidades,
-              alcance novas oportunidades e conquiste o sucesso que você merece.
-            </p>
-          </div>
-        </div>
+      <div className="mt-16 bg-[#00152A] flex flex-col items-center justify-center py-20 gap-8">
+        <h3
+          className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
+        >
+          + Serviços Sapritec
+        </h3>
+        <p className="text-xl 2xl:text-2xl text-center max-w-[50rem] font-thin">
+          Além dos serviços acima, a SAPRITEC oferece mais soluções ligadas a
+          tecnologia. Clique no botão abaixo para conferir...
+        </p>
+        <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-md px-6 py-2 font-bold">
+          Saber mais
+        </button>
       </div>
 
-      <div className="mt-16 p-4 flex items-center justify-center snap-always snap-start">
-        <div className="bg-sky-600 flex flex-col md:flex-row rounded-lg overflow-hidden">
-          <div className="flex flex-col justify-center items-start p-8 md:p-16 gap-4">
-            <h3 className="text-3xl font-bold">Fale Connosco!</h3>
-            <p className="text-md max-w-[24.5rem]">
-              Queremos ajudá-lo a compreender melhor os nossos serviços, entre
-              em contato conosco e saiba mais sobre os nossos serviços.
-            </p>
-            <button className="bg-white text-black px-4 py-2 text-sm rounded-md">
-              Contactar
-            </button>
-          </div>
-          <div>
-            <Image
-              src={"/assets/home/contactus.png"}
-              width={588}
-              height={384}
-              alt="Contact us"
-            ></Image>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-16 p-4 flex items-center justify-center snap-always snap-start">
+      <div className="my-20 p-4 flex flex-col gap-20 items-center justify-center snap-always snap-start">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-20">
           <div>
             <Image
               src={"/assets/home/testimonios/jerico.png"}
-              width={280}
+              width={200}
               height={320}
               alt="Testimonio"
               className="rounded-lg"
@@ -254,35 +222,64 @@ export default function Home() {
           </div>
           <div className="space-y-3">
             <div className="flex gap-0">
-              <Star className="text-yellow-400 size-5" />
-              <Star className="text-yellow-400 size-5" />
-              <Star className="text-yellow-400 size-5" />
-              <Star className="text-yellow-400 size-5" />
-              <Star className="text-yellow-400 size-5" />
+              <Star className="text-yellow-400 size-7" />
+              <Star className="text-yellow-400 size-7" />
+              <Star className="text-yellow-400 size-7" />
+              <Star className="text-yellow-400 size-7" />
+              <Star className="text-yellow-400 size-7" />
             </div>
-            <p className="text-md text-gray-300 max-w-[39.5rem] leading-[1.6]">
+            <p className="text-md text-gray-300 max-w-[35rem] leading-[1.6] font-thin">
               Trabalhar na Sapritec tem sido uma jornada incrível de aprendizado
               e crescimento profissional. Aqui, não apenas tenho a oportunidade
               de aplicar minhas habilidades e conhecimentos em projetos
               desafiadores, mas também recebo um apoio integral de uma equipe
               apaixonada e comprometida com o sucesso de cada membro.
             </p>
-            <h3 className="text-md text-gray-300 font-bold">Jericó Calala</h3>
-            <p className="text-gray-300 text-md">Designer</p>
+            <h3 className="text-md font-bold">Jericó Calala</h3>
+            <p className="text-gray-300 text-md font-thin">Designer</p>
+          </div>
+        </div>
+        <hr className="w-[90%] mt-3 m-auto border-gray-900" />
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-20">
+          <div>
+            <Image
+              src={"/assets/home/testimonios/jerico.png"}
+              width={200}
+              height={320}
+              alt="Testimonio"
+              className="rounded-lg"
+            ></Image>
+          </div>
+          <div className="space-y-3">
+            <div className="flex gap-0">
+              <Star className="text-yellow-400 size-7" />
+              <Star className="text-yellow-400 size-7" />
+              <Star className="text-yellow-400 size-7" />
+              <Star className="text-yellow-400 size-7" />
+              <Star className="text-yellow-400 size-7" />
+            </div>
+            <p className="text-md text-gray-300 max-w-[35rem] leading-[1.6] font-thin">
+              Trabalhar na Sapritec tem sido uma jornada incrível de aprendizado
+              e crescimento profissional. Aqui, não apenas tenho a oportunidade
+              de aplicar minhas habilidades e conhecimentos em projetos
+              desafiadores, mas também recebo um apoio integral de uma equipe
+              apaixonada e comprometida com o sucesso de cada membro.
+            </p>
+            <h3 className="text-md font-bold">Jericó Calala</h3>
+            <p className="text-gray-300 text-md font-thin">Designer</p>
           </div>
         </div>
       </div>
 
-      <div className="mt-16 p-4 flex items-center justify-center snap-always snap-start">
+      <div className="px-4 py-16 flex items-center justify-center bg-[#00152A]">
         <div className="flex flex-col items-center">
-          <h3 className="text-3xl font-bold">Nossos treinamentos</h3>
-          <p className="text-md text-gray-300 mt-2 max-w-[35rem] text-center">
-            Os nossos treinamentos ajudam os vários profissionais a se
-            destacarem no mercado, saiba mais sobre os nossos cursos e faça sua
-            inscrição
-          </p>
+          <h3
+            className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
+          >
+            Nossos treinamentos
+          </h3>
           <div className="flex gap-4 mt-8 flex-wrap md:flex-nowrap items-center justify-center">
-            <div className="bg-[#171A1F] rounded-md overflow-hidden">
+            <div className="bg-black rounded-md overflow-hidden shadow-lg">
               <div>
                 <Image
                   src={"/assets/cards/Image1.png"}
@@ -292,17 +289,19 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="p-6">
-                <p className="text-[#00BBAA] text-sm">Inscreva-se já</p>
-                <h3 className="font-bold text-md">Aprenda Análise de Dados</h3>
+                <p className="text-sm font-thin">Inscreva-se já</p>
+                <h3 className={`text-xl ${rowdies.className}`}>
+                  Análise de Dados para negócio
+                </h3>
                 <div className="flex justify-between items-center mt-5">
                   <p className="text-sm text-gray-300">Carreira em alta!</p>
-                  <button className="text-[#00BBAA] border border-gray-300 rounded-full px-4 py-2 text-sm">
+                  <button className="text-sky-400 border border-gray-300 rounded-full px-4 py-2 text-sm">
                     Saber mais
                   </button>
                 </div>
               </div>
             </div>
-            <div className="bg-[#171A1F] rounded-md overflow-hidden">
+            <div className="bg-black rounded-md overflow-hidden shadow-lg">
               <div>
                 <Image
                   src={"/assets/cards/Image2.png"}
@@ -312,17 +311,19 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="p-6">
-                <p className="text-[#00BBAA] text-sm">Inscreva-se já</p>
-                <h3 className="font-bold text-md">Aprenda SAP S/4HANA</h3>
+                <p className="text-sm font-thin">Inscreva-se já</p>
+                <h3 className={`text-xl ${rowdies.className}`}>
+                  Treinamento SAP S/4HANA
+                </h3>
                 <div className="flex justify-between items-center mt-5">
                   <p className="text-sm text-gray-300">Carreira em alta!</p>
-                  <button className="text-[#00BBAA] border border-gray-300 rounded-full px-4 py-2 text-sm">
+                  <button className="text-sky-400 border border-gray-300 rounded-full px-4 py-2 text-sm">
                     Saber mais
                   </button>
                 </div>
               </div>
             </div>
-            <div className="bg-[#171A1F] rounded-md overflow-hidden">
+            <div className="bg-black rounded-md overflow-hidden shadow-lg">
               <div>
                 <Image
                   src={"/assets/cards/Image3.png"}
@@ -332,32 +333,25 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="p-6">
-                <p className="text-[#00BBAA] text-sm">Inscreva-se já</p>
-                <h3 className="font-bold text-md">Aprenda Programação</h3>
+                <p className="text-sm font-thin">Inscreva-se já</p>
+                <h3 className={`text-xl ${rowdies.className}`}>
+                  Programação para iniciantes
+                </h3>
                 <div className="flex justify-between items-center mt-5">
                   <p className="text-sm text-gray-300">Carreira em alta!</p>
-                  <button className="text-[#00BBAA] border border-gray-300 rounded-full px-4 py-2 text-sm">
+                  <button className="text-sky-400 border border-gray-300 rounded-full px-4 py-2 text-sm">
                     Saber mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <button className="text-md text-[#00BBAA] border border-[#00BBAA] rounded-md mt-8 px-4 py-2">
-            Veja mais treinamentos
+          <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-md px-6 py-2 font-bold mt-8">
+            Mais treinamentos
           </button>
         </div>
       </div>
 
-      {/*<MainSection />
-      <Identity />
-      <Feactures />
-
-      <Integrations />
-
-      <Testimonios />
-      <Coaching />
-      <ContactForm />*/}
       <Footer />
     </>
   );

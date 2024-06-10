@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function HeaderMenu() {
   return (
     <>
-      <div className="hidden p-4 pb-1  md:flex fixed w-full bg-black -top-1 z-50">
-        <div className="max-w-screen-2xl flex justify-between items-center w-full m-auto">
+      <div className="hidden px-12 py-3 md:flex fixed w-full bg-black -top-1 z-50">
+        <div className="flex justify-between items-center w-full m-auto">
           <Logo />
           <div className="flex gap-8 lg:gap-20 items-center">
             <NavLinks />
@@ -16,7 +16,7 @@ export default function HeaderMenu() {
                 href="/kwonmore"
                 className="bg-sky-600 py-2 px-6 rounded-md shadow-sm hover:bg-gray-200 hover:text-sky-600 transition-all duration-700"
               >
-                Saiba mais
+                Contacte-nos
               </Link>
             </div>
           </div>
