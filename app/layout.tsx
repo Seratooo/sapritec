@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Rowdies, Archivo } from "next/font/google";
+import { Rowdies, Archivo } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-export const rowdies = Rowdies({
+const rowdies = Rowdies({
   style: ["normal"],
   weight: "400",
   subsets: ["latin"],

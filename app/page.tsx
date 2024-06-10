@@ -19,7 +19,12 @@ import ContactForm from "./ui/blog/contact-form";
 import Identity from "./ui/aboutUS/identity";
 import Feactures, { Coaching } from "./ui/services/feature";
 import { Star } from "lucide-react";
-import { rowdies } from "./layout";
+import { Rowdies } from "next/font/google";
+export const rowdies = Rowdies({
+  style: ["normal"],
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
