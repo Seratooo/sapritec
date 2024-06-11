@@ -20,7 +20,7 @@ import Identity from "./ui/aboutUS/identity";
 import Feactures, { Coaching } from "./ui/services/feature";
 import { Star } from "lucide-react";
 import { Rowdies } from "next/font/google";
-export const rowdies = Rowdies({
+const rowdies = Rowdies({
   style: ["normal"],
   weight: "400",
   subsets: ["latin"],
