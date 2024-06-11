@@ -32,7 +32,7 @@ export default function NavLinks() {
         </Link>
 
         <Link
-          href="/kwonmore#contactus"
+          href="/trainings"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Treinamentos
@@ -73,14 +73,14 @@ export function NavLinksMobile() {
           Serviços
         </Link>
         <Link
-          href="/kwonmore"
+          href="/trainings"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Treinamentos
         </Link>
 
         <Link
-          href="/kwonmore#contactus"
+          href="/contacts"
           className="text-white hover:text-sky-200 transition-all duration-300"
         >
           Contacte-nos

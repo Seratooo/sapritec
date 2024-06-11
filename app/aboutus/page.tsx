@@ -6,6 +6,7 @@ import OurTeam from "../ui/aboutUS/our-team";
 import Footer from "../ui/footer";
 import HeaderMenu from "../ui/header";
 import { Rowdies } from "next/font/google";
+import Link from "next/link";
 const rowdies = Rowdies({
   style: ["normal"],
   weight: "400",
@@ -108,9 +109,12 @@ export default function Page() {
           diversos produtos tecnológicos e garantimos a qualidade exigida no
           mercado de trabalho!
         </p>
-        <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-md px-6 py-2 font-bold">
+        <Link
+          href="contacts"
+          className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-6 py-2 font-bold"
+        >
           Fale connosco!
-        </button>
+        </Link>
       </div>
       <Footer />
     </>

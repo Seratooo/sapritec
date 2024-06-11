@@ -5,6 +5,7 @@ import Footer from "../ui/footer";
 import HeaderMenu from "../ui/header";
 import Image from "next/image";
 import { Rowdies } from "next/font/google";
+import Link from "next/link";
 const rowdies = Rowdies({
   style: ["normal"],
   weight: "400",
@@ -31,7 +32,7 @@ export default function Page() {
           </button>
         </div>
       </main>
-      <div className="bg-gradient-to-b from-[#004564] to-black px-4 pt-20 pb-40">
+      <div className="bg-gradient-to-b from-[#004564] to-black px-4 pt-20 pb-32">
         <div className="max-w-[58rem] m-auto gap-4 flex flex-col md:flex-row flex-wrap justify-center ">
           <div className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300">
             <div>
@@ -170,9 +171,12 @@ export default function Page() {
             >
               ENTRE EM CONTACTO CONNOSCO AGORA MESMO!
             </h3>
-            <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-md px-8 py-2 font-bold">
+            <Link
+              href="/contacts"
+              className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-8 py-2 font-bold"
+            >
               Fale connosco!
-            </button>
+            </Link>
           </div>
           <Image
             src={`/assets/contact.png`}

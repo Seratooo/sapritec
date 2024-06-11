@@ -20,6 +20,7 @@ import Identity from "./ui/aboutUS/identity";
 import Feactures, { Coaching } from "./ui/services/feature";
 import { Star } from "lucide-react";
 import { Rowdies } from "next/font/google";
+import Link from "next/link";
 const rowdies = Rowdies({
   style: ["normal"],
   weight: "400",
@@ -209,9 +210,12 @@ export default function Home() {
           Além dos serviços acima, a SAPRITEC oferece mais soluções ligadas a
           tecnologia. Clique no botão abaixo para conferir...
         </p>
-        <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-md px-6 py-2 font-bold">
+        <Link
+          href="/services"
+          className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-6 py-2 font-bold"
+        >
           Saber mais
-        </button>
+        </Link>
       </div>
 
       <div className="my-20 p-4 flex flex-col gap-20 items-center justify-center snap-always snap-start">
@@ -351,7 +355,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-md px-6 py-2 font-bold mt-8">
+          <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-6 py-2 font-bold mt-8">
             Mais treinamentos
           </button>
         </div>
