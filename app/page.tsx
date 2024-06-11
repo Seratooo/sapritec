@@ -199,7 +199,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-16 bg-[#00152A] flex flex-col items-center justify-center py-20 gap-8">
+      <div className="mt-16 px-4 bg-[#00152A] flex flex-col items-center justify-center py-28 gap-8">
         <h3
           className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
         >

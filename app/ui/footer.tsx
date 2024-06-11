@@ -4,7 +4,7 @@ import Logo from "./logo";
 export default function Footer() {
   return (
     <footer className="">
-      <div className="flex px-4 2xl:px-12 items-start border-t-[1px] border-gray-900 mt-24 pt-20">
+      <div className="flex px-4 2xl:px-12 items-start border-t-[1px] border-gray-900 pt-20">
         <div className="flex justify-between w-full flex-wrap gap-4">
           <Logo></Logo>
           <div className="space-y-3 w-36">
