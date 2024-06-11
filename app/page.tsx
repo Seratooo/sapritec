@@ -121,7 +121,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-16 md:mt-32 p-4 flex flex-col items-center gap-16">
+      <div className="my-16 md:my-32 p-4 flex flex-col items-center gap-20">
         <div className="flex gap-8 items-center flex-col md:flex-row">
           <div className="space-y-4">
             <h3
