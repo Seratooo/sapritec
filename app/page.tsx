@@ -31,27 +31,27 @@ export default function Home() {
     <>
       <HeaderMenu />
 
-      <main className="flex items-center min-h-[100vh] md:min-h-[110vh] h-screen bg-[url('/assets/home/sapritec-home-mobile.jpg')] md:bg-[url('/assets/home/sapritec-home.png')] bg-center md:bg-top px-4 md:px-12 py-4 bg-cover">
+      <main className="flex items-center min-h-[95vh] md:min-h-[110vh] bg-[url('/assets/home/sapritec-home-mobile.png')] md:bg-[url('/assets/home/sapritec-home.png')] bg-left md:bg-top px-4 md:px-12 bg-cover">
         <div className="flex flex-col gap-16 items-center md:items-start">
           <h1
-            className={`text-4xl md:text-5xl 2xl:text-6xl text-center md:text-left md:max-w-[35rem] 2xl:max-w-[38rem] ${rowdies.className}`}
+            className={`text-4xl md:text-5xl 2xl:text-6xl text-center md:text-left md:max-w-[35rem] 2xl:max-w-[38rem] [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] ${rowdies.className}`}
           >
             SAPRITEC, a melhor solução tecnológica para sua empresa
           </h1>
           <div className="flex gap-2 items-center">
-            <p className="text-xl bg-white text-[#00152A] px-4 py-2 font-bold rounded-sm">
+            <p className="text-xl bg-white shadow-2xl text-[#00152A] px-4 py-2 font-bold rounded-sm">
               INOVAÇÃO
             </p>
             <p
-              className={`text-4xl py-2 font-bold rounded-sm text-white ${rowdies.className}`}
+              className={`text-4xl py-2 font-bold rounded-sm [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] text-white ${rowdies.className}`}
             >
               +
             </p>
-            <p className="text-xl bg-white text-[#00152A] px-4 py-2 font-bold rounded-sm">
+            <p className="text-xl bg-white shadow-2xl text-[#00152A] px-4 py-2 font-bold rounded-sm">
               FUTURO
             </p>
           </div>
-          <p className="text-2xl 2xl:text-3xl text-center md:text-left md:max-w-[35rem] 2xl:max-w-[40rem]">
+          <p className="text-2xl 2xl:text-3xl text-center md:text-left md:max-w-[35rem] 2xl:max-w-[40rem] [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
             Junte-se a nós na jornada rumo à excelência tecnológica e ao sucesso
             empresarial duradouro
           </p>
