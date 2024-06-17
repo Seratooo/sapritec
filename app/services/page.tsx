@@ -1,11 +1,9 @@
-import ExploreMore from "../ui/services/explore-more";
-import FeacturePageFeature from "../ui/services/feature";
-import MainSection from "../ui/services/main-section";
 import Footer from "../ui/footer";
 import HeaderMenu from "../ui/header";
 import Image from "next/image";
 import { Rowdies } from "next/font/google";
 import Link from "next/link";
+import { describe } from "node:test";
 const rowdies = Rowdies({
   style: ["normal"],
   weight: "400",
@@ -23,18 +21,27 @@ export default function Page() {
             NOSSOS SERVIÇOS
           </h1>
 
-          <p className="text-2xl 2xl:text-3xl text-center md:max-w-[65rem] 2xl:max-w-[75rem] [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
+          <p className="font-thin text-2xl 2xl:text-3xl text-center md:max-w-[65rem] 2xl:max-w-[75rem] [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
             Abrangem desde consultoria estratégica até implementações de
             sistemas avançados, garantindo a satisfação dos nossos clientes.
           </p>
-          <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-xl px-8 py-2 font-bold">
+          <Link
+            href="/services#services"
+            className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-xl px-8 py-2 font-bold"
+          >
             SOLICITAR AGORA
-          </button>
+          </Link>
         </div>
       </main>
-      <div className="bg-gradient-to-b from-[#004564] to-black px-4 pt-20 pb-32">
+      <div
+        className="bg-gradient-to-b from-[#004564] to-black px-4 pt-28 pb-32"
+        id="services"
+      >
         <div className="max-w-[58rem] m-auto gap-4 flex flex-col md:flex-row flex-wrap justify-center ">
-          <div className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300">
+          <Link
+            href="/services/sap-erp"
+            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
+          >
             <div>
               <Image
                 src={"/assets/services/service1.png"}
@@ -54,8 +61,11 @@ export default function Page() {
                 Nossa missão é capacitar empresas através de nossa experiência..
               </p>
             </div>
-          </div>
-          <div className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300">
+          </Link>
+          <Link
+            href="/services/sap-hanna"
+            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
+          >
             <div>
               <Image
                 src={"/assets/services/service2.png"}
@@ -75,8 +85,11 @@ export default function Page() {
                 Nossa missão é capacitar empresas através de nossa experiência..
               </p>
             </div>
-          </div>
-          <div className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300">
+          </Link>
+          <Link
+            href="/services/primavera"
+            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
+          >
             <div>
               <Image
                 src={"/assets/services/service3.png"}
@@ -96,8 +109,11 @@ export default function Page() {
                 Nossa missão é capacitar empresas através de nossa experiência..
               </p>
             </div>
-          </div>
-          <div className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300">
+          </Link>
+          <Link
+            href="/services/as400"
+            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
+          >
             <div>
               <Image
                 src={"/assets/services/service4.png"}
@@ -117,8 +133,11 @@ export default function Page() {
                 Nossa missão é capacitar empresas através de nossa experiência..
               </p>
             </div>
-          </div>
-          <div className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300">
+          </Link>
+          <Link
+            href="/services/artificial-intelligence"
+            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
+          >
             <div>
               <Image
                 src={"/assets/services/service5.png"}
@@ -138,8 +157,11 @@ export default function Page() {
                 Nossa missão é capacitar empresas através de nossa experiência..
               </p>
             </div>
-          </div>
-          <div className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300">
+          </Link>
+          <Link
+            href="/services/software-dev"
+            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
+          >
             <div>
               <Image
                 src={"/assets/services/service6.png"}
@@ -159,7 +181,7 @@ export default function Page() {
                 Nossa missão é capacitar empresas através de nossa experiência..
               </p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 
