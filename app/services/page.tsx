@@ -27,7 +27,7 @@ export default function Page() {
           </p>
           <Link
             href="/services#services"
-            className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-xl px-8 py-2 font-bold"
+            className="bg-white text-[#00152A] transition-all duration-300 text-center hover:bg-sky-600 hover:text-white rounded-sm text-xl px-8 py-2 font-bold"
           >
             SOLICITAR AGORA
           </Link>
@@ -195,7 +195,7 @@ export default function Page() {
             </h3>
             <Link
               href="/contacts"
-              className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-8 py-2 font-bold"
+              className="bg-white text-[#00152A] transition-all duration-300 text-center hover:bg-sky-600 hover:text-white rounded-md text-md px-8 py-2 font-bold"
             >
               Fale connosco!
             </Link>

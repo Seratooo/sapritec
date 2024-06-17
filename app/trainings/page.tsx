@@ -67,7 +67,7 @@ export default function Page() {
           </p>
           <Link
             href="/trainings#trainings"
-            className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-xl px-8 py-2 font-bold"
+            className="bg-white text-[#00152A] transition-all text-center duration-300 hover:bg-sky-600 hover:text-white rounded-md text-xl px-8 py-2 font-bold"
           >
             RESERVAR UM TREINAMENTO
           </Link>
@@ -114,7 +114,7 @@ export default function Page() {
             </h3>
             <Link
               href="/contacts"
-              className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-8 py-2 font-bold"
+              className="bg-white text-[#00152A] transition-all text-center duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-8 py-2 font-bold"
             >
               Fale connosco!
             </Link>

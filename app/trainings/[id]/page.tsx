@@ -198,7 +198,7 @@ export default function Page({ params }: { params: { id: string } }) {
                 alt="Course"
               ></Image>
             </div>
-            <div className="p-6">
+            <div className="p-6 border-t border-gray-600">
               <p className="text-sm font-thin">Inscreva-se já</p>
               <h3 className={`text-xl ${rowdies.className}`}>
                 Análise de Dados para negócio
@@ -220,7 +220,7 @@ export default function Page({ params }: { params: { id: string } }) {
                 alt="Course"
               ></Image>
             </div>
-            <div className="p-6">
+            <div className="p-6 border-t border-gray-600">
               <p className="text-sm font-thin">Inscreva-se já</p>
               <h3 className={`text-xl ${rowdies.className}`}>
                 Treinamento SAP S/4HANA
@@ -242,7 +242,7 @@ export default function Page({ params }: { params: { id: string } }) {
                 alt="Course"
               ></Image>
             </div>
-            <div className="p-6">
+            <div className="p-6 border-t border-gray-600">
               <p className="text-sm font-thin">Inscreva-se já</p>
               <h3 className={`text-xl ${rowdies.className}`}>
                 Programação para iniciantes
