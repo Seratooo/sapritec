@@ -187,152 +187,74 @@ export default function Page({ params }: { params: { id: string } }) {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center px-4 pt-8 pb-40 bg-[url('/assets/services/services-bg.png')] bg-cover bg-center md:bg-top">
-        <div className="max-w-[58rem] m-auto gap-4 flex flex-col md:flex-row flex-wrap justify-center ">
-          <Link
-            href="/services/sap-erp"
-            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
-          >
+      <div className="flex flex-col items-center justify-center px-4 pt-8 pb-40 md:min-h-[80vh] bg-[url('/assets/services/services-bg.png')] bg-cover bg-center md:bg-top">
+        <div className="flex gap-4 mt-8 flex-wrap md:flex-nowrap items-center justify-center">
+          <div className="bg-[#00152A] rounded-md overflow-hidden shadow-lg">
             <div>
               <Image
-                src={"/assets/services/service1.png"}
-                alt="service"
-                className="w-full md:w-auto"
-                width={265}
-                height={141}
+                src={"/assets/cards/Image1.png"}
+                width={376}
+                height={256}
+                alt="Course"
               ></Image>
             </div>
-            <div>
-              <h3
-                className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
-              >
-                SAP ERP
+            <div className="p-6">
+              <p className="text-sm font-thin">Inscreva-se já</p>
+              <h3 className={`text-xl ${rowdies.className}`}>
+                Análise de Dados para negócio
               </h3>
-              <p className="text-md font-thin text-gray-300 md:max-w-[16rem] text-center">
-                Nossa missão é capacitar empresas através de nossa experiência..
-              </p>
+              <div className="flex justify-between items-center mt-5">
+                <p className="text-sm text-gray-300">Carreira em alta!</p>
+                <button className="text-sky-400 border border-gray-300 rounded-full px-4 py-2 text-sm">
+                  Saber mais
+                </button>
+              </div>
             </div>
-          </Link>
-          <Link
-            href="/services/sap-hanna"
-            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
-          >
+          </div>
+          <div className="bg-[#00152A] rounded-md overflow-hidden shadow-lg">
             <div>
               <Image
-                src={"/assets/services/service2.png"}
-                alt="service"
-                className="w-full md:w-auto"
-                width={265}
-                height={141}
+                src={"/assets/cards/Image2.png"}
+                width={376}
+                height={256}
+                alt="Course"
               ></Image>
             </div>
-            <div>
-              <h3
-                className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
-              >
-                SAP S 4/HANA
+            <div className="p-6">
+              <p className="text-sm font-thin">Inscreva-se já</p>
+              <h3 className={`text-xl ${rowdies.className}`}>
+                Treinamento SAP S/4HANA
               </h3>
-              <p className="text-md font-thin text-gray-300 md:max-w-[16rem] text-center">
-                Nossa missão é capacitar empresas através de nossa experiência..
-              </p>
+              <div className="flex justify-between items-center mt-5">
+                <p className="text-sm text-gray-300">Carreira em alta!</p>
+                <button className="text-sky-400 border border-gray-300 rounded-full px-4 py-2 text-sm">
+                  Saber mais
+                </button>
+              </div>
             </div>
-          </Link>
-          <Link
-            href="/services/primavera"
-            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
-          >
+          </div>
+          <div className="bg-[#00152A] rounded-md overflow-hidden shadow-lg">
             <div>
               <Image
-                src={"/assets/services/service3.png"}
-                alt="service"
-                className="w-full md:w-auto"
-                width={265}
-                height={141}
+                src={"/assets/cards/Image3.png"}
+                width={376}
+                height={256}
+                alt="Course"
               ></Image>
             </div>
-            <div>
-              <h3
-                className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
-              >
-                PRIMAVERA
+            <div className="p-6">
+              <p className="text-sm font-thin">Inscreva-se já</p>
+              <h3 className={`text-xl ${rowdies.className}`}>
+                Programação para iniciantes
               </h3>
-              <p className="text-md font-thin text-gray-300 md:max-w-[16rem] text-center">
-                Nossa missão é capacitar empresas através de nossa experiência..
-              </p>
+              <div className="flex justify-between items-center mt-5">
+                <p className="text-sm text-gray-300">Carreira em alta!</p>
+                <button className="text-sky-400 border border-gray-300 rounded-full px-4 py-2 text-sm">
+                  Saber mais
+                </button>
+              </div>
             </div>
-          </Link>
-          <Link
-            href="/services/as400"
-            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
-          >
-            <div>
-              <Image
-                src={"/assets/services/service4.png"}
-                alt="service"
-                className="w-full md:w-auto"
-                width={265}
-                height={141}
-              ></Image>
-            </div>
-            <div>
-              <h3
-                className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
-              >
-                AS400
-              </h3>
-              <p className="text-md font-thin text-gray-300 md:max-w-[16rem] text-center">
-                Nossa missão é capacitar empresas através de nossa experiência..
-              </p>
-            </div>
-          </Link>
-          <Link
-            href="/services/artificial-intelligence"
-            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
-          >
-            <div>
-              <Image
-                src={"/assets/services/service5.png"}
-                alt="service"
-                className="w-full md:w-auto"
-                width={265}
-                height={141}
-              ></Image>
-            </div>
-            <div>
-              <h3
-                className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
-              >
-                INTELIGÊNCIA ARTIFICIAL
-              </h3>
-              <p className="text-md font-thin text-gray-300 md:max-w-[16rem] text-center">
-                Nossa missão é capacitar empresas através de nossa experiência..
-              </p>
-            </div>
-          </Link>
-          <Link
-            href="/services/software-dev"
-            className="bg-[#00152A] w-full md:w-72 flex flex-col p-4 rounded-lg shadow-2xl space-y-4 cursor-pointer border-[3px] border-[#00152A] hover:border-sky-500 transition-all duration-300"
-          >
-            <div>
-              <Image
-                src={"/assets/services/service6.png"}
-                alt="service"
-                className="w-full md:w-auto"
-                width={265}
-                height={141}
-              ></Image>
-            </div>
-            <div>
-              <h3
-                className={`text-2xl 2xl:text-3xl text-center uppercase ${rowdies.className}`}
-              >
-                SOFTWARE
-              </h3>
-              <p className="text-md font-thin text-gray-300 md:max-w-[16rem] text-center">
-                Nossa missão é capacitar empresas através de nossa experiência..
-              </p>
-            </div>
-          </Link>
+          </div>
         </div>
       </div>
       <Footer />

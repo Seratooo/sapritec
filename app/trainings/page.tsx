@@ -65,12 +65,15 @@ export default function Page() {
             Abrangem desde consultoria estratégica até implementações de
             sistemas avançados, garantindo a satisfação dos nossos clientes.
           </p>
-          <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-sm text-xl px-8 py-2 font-bold">
+          <Link
+            href="/trainings#trainings"
+            className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-xl px-8 py-2 font-bold"
+          >
             RESERVAR UM TREINAMENTO
-          </button>
+          </Link>
         </div>
       </main>
-      <div className=" px-4 pt-20 pb-32 space-y-20">
+      <div className=" px-4 pt-28 pb-32 space-y-20" id="trainings">
         {Courses.map((course) => (
           <div className="max-w-[63rem] m-auto space-y-4">
             <h3

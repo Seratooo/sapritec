@@ -218,7 +218,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="my-20 p-4 flex flex-col gap-20 items-center justify-center snap-always snap-start">
+      <div className="my-36 p-4 flex flex-col gap-20 items-center justify-center snap-always snap-start">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-20">
           <div>
             <Image
@@ -249,35 +249,6 @@ export default function Home() {
           </div>
         </div>
         <hr className="w-[90%] mt-3 m-auto border-gray-900" />
-        <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-20">
-          <div>
-            <Image
-              src={"/assets/home/testimonios/jerico.png"}
-              width={200}
-              height={320}
-              alt="Testimonio"
-              className="rounded-lg"
-            ></Image>
-          </div>
-          <div className="space-y-3">
-            <div className="flex gap-0">
-              <Star className="text-yellow-400 size-7" />
-              <Star className="text-yellow-400 size-7" />
-              <Star className="text-yellow-400 size-7" />
-              <Star className="text-yellow-400 size-7" />
-              <Star className="text-yellow-400 size-7" />
-            </div>
-            <p className="text-md text-gray-300 max-w-[35rem] leading-[1.6] font-thin">
-              Trabalhar na Sapritec tem sido uma jornada incrível de aprendizado
-              e crescimento profissional. Aqui, não apenas tenho a oportunidade
-              de aplicar minhas habilidades e conhecimentos em projetos
-              desafiadores, mas também recebo um apoio integral de uma equipe
-              apaixonada e comprometida com o sucesso de cada membro.
-            </p>
-            <h3 className="text-md font-bold">Jericó Calala</h3>
-            <p className="text-gray-300 text-md font-thin">Designer</p>
-          </div>
-        </div>
       </div>
 
       <div className="px-4 py-16 flex items-center justify-center bg-[#00152A]">
@@ -355,9 +326,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-6 py-2 font-bold mt-8">
+          <Link
+            href="/trainings"
+            className="bg-white text-[#00152A] transition-all duration-300 hover:bg-sky-600 hover:text-white rounded-md text-md px-6 py-2 font-bold mt-8"
+          >
             Mais treinamentos
-          </button>
+          </Link>
         </div>
       </div>
 
