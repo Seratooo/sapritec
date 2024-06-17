@@ -95,15 +95,15 @@ export default function Page() {
           <div className="border-[3px] border-sky-600 m-8 px-8 py-4 rounded-md space-y-4">
             <div className="flex gap-4">
               <MapPin />
-              <p>1777 West Street, Indianapolis, IN 46225</p>
+              <p>Belas Business, Edf.Bengo Apt 410-411</p>
             </div>
             <div className="flex gap-4">
               <Mail />
-              <p>geral@sparitec.co.ao</p>
+              <p>geral@sapritec.com</p>
             </div>
             <div className="flex gap-4">
               <Phone />
-              <p>(244) 935 352 494</p>
+              <p>(+244) 923 304 860</p>
             </div>
           </div>
         </div>
